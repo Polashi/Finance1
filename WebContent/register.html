@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Register </title>
+</head>
+<body>
+<form action="welcomeCustomer.html" method="post">
+  <div class="container">
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    
+    <label for="name"><b>Name</b></label>
+    	<input type="text" placeholder="Enter Name:" name="name" required>
+    <br>
+    <br>
+    <label for="name"><b>Email</b></label>
+    	<input type="email" placeholder="Enter Email:" name="email" required>
+    <br>
+    <br>
+    <div class="password" style="display: inline-block" >
+    	<label for="psw"><b>Password</b></label>
+    	<input type="password" placeholder="Enter Password:" name="psw" required>
+    	
+    	<label for="psw-repeat"><b>Confirm Password</b></label>
+    	<input type="password" placeholder="Confirm Password:" name="psw-repeat" required>	
+    </div>
+    <br>
+    <br>
+     <label for="contact"><b>Contact</b></label>
+     	<input type="tel" placeholder="Enter Phone number:" name="contact" required>
+     <br>
+     <br>
+     <label for="address" ><b>Address</b></label>
+     	<input type="text" placeholder="Enter Address" name="address" required>
+	
+     <br>
+     <br>
+     <label for="age"><b>Age</b></label>
+     	<input type="number" size="2" min="18" placeholder="Enter Age" name="age" required>
+     <br>
+     <br>
+     <label id="gender">Gender:</label>
+	 	<input type="radio" name="sex" value="Male" /><span>Male</span>
+	 	<input type="radio" name="sex" value="Female" /><span>Female</span>
+	 <br>	
+	 <br>
+	 <button type="submit" id="registerButton" class="registerbtn">Register</button>
+	 
+	 <br>
+	 <br>
+    <div class="submission">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+    
+    
+  </div>
+</form>
+
+</body>
+
+<script type="text/javascript">
+    document.getElementById("registerButton").onclick = function () {
+        location.href = "welcomeCustomer.html";
+    };
+</script>
+</html>

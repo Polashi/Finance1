@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Apply for loan</title>
+</head>
+<body>
+	<h1>You want a loan? You're in the right place</h1>
+	
+	<span>
+		<label class="">User Name:
+			<span class="asterisk">*
+			</span>
+		</label>
+		<input type="text" placeholder="" name="customerName" value="" autocomplete="off" required="required">
+	</span>
+	<br>
+	<br>
+	<span>
+		<label for="loanAmount">Loan Amount</label>
+    	<input type="number" min=100000 placeholder="" name="loanAmount" required>
+	</span>
+	<br>
+	<br>
+	
+	<br>
+	<br>
+	<div id="" class="" >
+		<span class="" style="" >
+			<label class=""> Identity Proof 
+				<span class="asterisk">*</span>
+			</label>
+			<select id="typeOfDocument" class="" name="typeOfDocument" required="required">
+				<option value="">Select Identity Proof</option>
+				<option value="pan">PAN Card</option>
+				<option value="aadhar">AADHAR Card</option>
+				<option value="passport">Passport</option>
+				<option value="voterId">Voter ID</option>
+				<option value="drivingLicense">Driving License</option>
+			</select>
+			<span class="focus-border"></span>
+		</span> 
+		<br>
+		<br>
+		<span>
+			<label for="document">Upload Document:</label>
+    		<input type="file" placeholder="" name="document" required>
+		</span>
+		<span>
+		<label for="documentID">Document No:</label>
+    	<input type="text" id="documentId" name="documentId" min-length="10">
+	</span>
+	<br>
+	<br>
+	<button type="submit" id="" class="">Apply</button>
+	</div>
+</body>
+
+<script type="text/javascript">
+    document.getElementById("registerButton").onclick = function () {
+        location.href = "approval.html";
+    };
+</script>
+
+
+</html>
