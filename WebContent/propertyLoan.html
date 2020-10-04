@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Property Loan</title>
+</head>
+<body>
+	<div>
+		<h1> Apply for a Property loan</h1>
+	</div>
+	<br>
+	<br>
+	<label for="areaOfProperty"><b>Area of Property(Sq. ft)</b></label>
+    <input type="text" placeholder="Enter Area:" name="areaOfProperty" required>
+    
+    <!-- <label for="propertyType"><b>Property Type</b></label>
+    <span class="asterisk">*</span>
+    <input type="text" placeholder="Enter Property type:" name="propertyType" required> -->
+    
+    
+    <label class="propertyType"><b>Property Type:</b></label>
+        <select id="propertyType" name="propertyType" required>
+            <option>Select Property Type</option>
+            <option id="homeConstruction" value="homeConstruction">Home Construction Loans</option>
+            <option id="landPurchase" value="landPurchase">Land-Purchase Loans</option>
+            <option id="nriHome" value="nriHome">NRI Home Loans</option>
+            <option id="other" value="other">Other</option>
+        </select>  
+</body>
+</html>
