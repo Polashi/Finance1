@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src = "http.js"></script>
+    <script type="text/javascript" src ="utils.js"></script>
 </head>
 
 <body>
@@ -13,8 +15,9 @@
     <p>Please fill in your User Id:</p>
     <form action="/verifyUser" method="post">
         <label>Enter PAN No.</label>
-        <input type="text" name="panCard" id="panCard" onfocusout="checkUserExistOrNot()" required />	
-        <label class=""><b>Type of Loan:</b></label>
+        <input type="text" name="panCard" id="panCard" onfocusout="checkUserExistOrNot(this.id)" required />
+
+        <label class=""> Type of loan: </label>
         <select id="typeOfLoan" class="" name="typeOfLoan" required>
             <option value="">Select loan type</option>
             <option id="1" value="vehicleLoan">Vehicle Loan</option>
@@ -28,3 +31,4 @@
 </div>
 </body>
 </html>
+

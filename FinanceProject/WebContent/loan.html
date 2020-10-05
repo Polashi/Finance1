@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Apply for loan</title>
+</head>
+<body>	
+		<h1>Welcome! Apply for a loan</h1>
+		<label class=""><b>User Name as per PAN:</b></label> 
+		<span class="asterisk">*</span>
+		<input type="text" placeholder="" name="customerName" value="" autocomplete="off" required="required">
+		<br>
+		<br>
+		<label for="loanAmount"><b>Loan Amount</b></label>
+    	<input type="number" min=100000 placeholder="" name="loanAmount" required>
+		<br>
+		<br>
+		<label for="email"><b>Email:</b></label>
+		<span class="asterisk">*</span>
+    	<input type="email" placeholder="Enter Email:" name="email" required>
+   		<br>
+    	<br>
+    	<label for="contact"><b>Phone No.</b></label>
+    	<span class="asterisk">*</span>
+     	<input type="tel" placeholder="Enter Phone number:" name="contact" required>
+    	<br>
+     	<br>
+     	<label for="address" ><b>Address</b></label>
+     	<span class="asterisk">*</span>
+     	<input type="text" placeholder="Enter Address" name="address" required>
+     	<br>
+     	<br>
+     	<label for="dob"><b>DOB</b></label>
+     	<span class="asterisk">*</span>
+     	<input type="date" placeholder="" name="dob" required>
+     	<br>
+     	<br>
+     	<label for="age"><b>Age</b></label>
+     	<span class="asterisk">*</span>
+     	<input type="number" size="2" min="18" placeholder="Enter Age" name="age" required>
+     	<br>
+     	<br>
+     	 <label id="gender"><b>Gender:</b></label>
+	 		<input type="radio" name="sex" value="Male" /><span>Male</span>
+	 		<input type="radio" name="sex" value="Female" /><span>Female</span>
+	 	<br>	
+	 	<br>
+	 	<label class=""><b>Bank Name</b></label>
+        <select id="typeOfBank" name="typeOfBank" required>
+            <option value="">Select Bank Name</option>
+            <option id="1" value="A">Axis Bank</option>
+            <option id="2" value="B">Bandhan Bank</option>
+            <option id="3" value="C">City Union Bank</option>
+            <option id="4" value="D">DCB Bank</option>
+            <option id="6" value="F">Federal Bank</option>
+            <option id="8" value="H">HDFC Bank</option>
+            <option id="9" value="I">ICICI Bank</option>
+            <option id="10" value="J">IDBC Bank</option>
+            <option id="11" value="S">State Bank of India</option>
+            
+            
+        </select>  
+        <br> 
+        <br> 
+	 	<label for="bankAccount"><b>Account Number:</b></label>
+    	<span class="asterisk">*</span>
+    	
+     	<input type="text" id="accountNumber" placeholder="Enter Account number:" name="accountNumber" onfocusout="validateAccountNumber" required>
+    	<br>
+     	<br>
+     	<label for="tenor"><b>Tenor(years):</b></label>
+     	<span class="asterisk">*</span>
+     	<input type="number" min="1" max="10" placeholder="" name="tenor" required>
+     	<br>
+     	<br>
+     	
+	 	
+		<button type="submit" id="" class="">Apply</button>
+		</div>
+</body>
+</html>
